@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - L.H Modisane</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <span class="logo">L.H Modisane</span>
+
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+    </nav>
+
+    <main id="main">
+
+        <!-- Introduction -->
+        <section class="hero">
+
+            <h1>Welcome to My Portfolio</h1>
+
+            <img src="PHOTO.jpg"
+                 alt="A photo of Letlhogonolo Modisane"
+                 width="200">
+
+            <p>
+                Hello! My name is Letlhogonolo Modisane.
+                I am a student learning HTML, CSS and JavaScript.
+                I enjoy learning new skills and using technology.
+            </p>
+
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Computer skills</li>
+                <li>HTML and CSS</li>
+                <li>Problem solving</li>
+            </ul>
+
+        </section>
+
+        <!-- Hobbies -->
+        <section class="hobbies">
+
+            <h2>My Hobbies</h2>
+
+            <ol>
+                <li>Learning about computers</li>
+                <li>Reading</li>
+                <li>Learning new skills</li>
+            </ol>
+
+        </section>
+
+        <!-- Projects -->
+        <section class="projects">
+
+            <h2>My Projects</h2>
+
+            <p>Here are some of the projects and activities I have worked on.</p>
+
+            <section class="projects-grid" id="projectsGrid">
+            </section>
+
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Thank you for visiting my portfolio.
+                You can use the form below to send me a message.
+            </p>
+
+            <form id="contactForm">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="you@example.com"
+                >
+
+                <label for="topic">Topic</label>
+
+                <select id="topic" name="topic">
+                    <option value="general">General enquiry</option>
+                    <option value="project">Project idea</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <!-- JavaScript feedback -->
+            <p id="formMessage" role="status"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 L.H Modisane. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
